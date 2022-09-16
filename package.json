@@ -10,7 +10,7 @@
     "build:clean": "yarn clean && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
     "gatsby": "^3.3.1",
