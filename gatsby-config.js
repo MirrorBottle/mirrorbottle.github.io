@@ -4,7 +4,7 @@ module.exports = {
     description: 'A Gatsby theme for the carbon design system',
     keywords: 'gatsby,theme,carbon',
   },
-  pathPrefix: `/mirrorbottle.github.io`,
+  pathPrefix: `/`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
@@ -15,14 +15,14 @@ module.exports = {
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#161616',
-        display: 'browser',
+        display: 'browser'
       },
     },
     {
       resolve: 'gatsby-theme-carbon',
       options: {
         mediumAccount: 'carbondesign',
-        repository: {},
+        isSwitcherEnabled: false
       },
     },
   ],
