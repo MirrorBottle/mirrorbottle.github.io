@@ -22,7 +22,11 @@ module.exports = {
       resolve: 'gatsby-theme-carbon',
       options: {
         mediumAccount: 'carbondesign',
-        isSwitcherEnabled: false
+        isSwitcherEnabled: false,
+        theme: {
+          homepage: 'dark',
+          interior: 'dark',
+        },
       },
     },
   ],
