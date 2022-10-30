@@ -1,0 +1,205 @@
+/* UTILITY */
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background: var(--primary);
+  color: #fff!important;
+}
+
+.btn.btn-outline-primary {
+  box-sizing:border-box;
+  border: 3px solid var(--primary);
+  padding: 7px 17px;
+  font-weight: bold;
+  background: #fff!important;
+}
+
+.btn.btn-block {
+  width: 100%;
+}
+
+a.btn {
+  text-decoration: none!important;
+  font-size: 16px!important;
+  text-align: center;
+  color: var(--primary);
+}
+
+.card {
+  padding: 10px 10px 20px 10px;
+  background: #fff;
+}
+
+.badge {
+  font-weight: bold;
+  background: var(--primary);
+  padding: 3px 20px;
+  color: #fff;
+}
+
+/* HEADER */
+
+header {
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+header #logo {
+  height: 90px;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  flex: 1;
+}
+
+header nav ul li {
+  font-size: 20px;
+  position: relative;
+}
+
+header nav ul li:after, header nav ul li:before {
+  display:block;
+  content: '';
+  border-bottom: solid 3px var(--primary);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+header nav ul li:hover:after { transform: scaleX(1); }
+
+header nav ul li a {
+  text-decoration: none!important;
+  color: var(--primary);
+}
+
+header nav ul li.active a {
+  font-weight: bold;
+}
+
+header nav ul li.active:after, header nav ul li.active:before {
+  display:block;
+  content: '';
+  border-bottom: solid 3px var(--primary);
+  transform: scaleX(1);
+}
+
+/* MAIN - HOME */
+#home-page #search-hero {
+  background: var(--secondary);
+}
+
+#home-page #search-hero form {
+  background: #fff;
+}
+
+#home-page #search-hero input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 0px!important;
+  border: 2px solid var(--primary);
+}
+
+#home-page #search-hero button {
+  font-family: 'Nunito';
+  font-size: 16px;
+}
+
+#home-page .card .datetime {
+  color: #333;
+  font-size: 14px;
+}
+
+
+#home-page #static .col-12 h1 {
+  font-size: 1.8rem;
+}
+
+#home-page #static .col-4 h2 {
+  font-size: 2.1rem;
+}
+
+#home-page #static .col-4 p {
+  font-size: 1.2rem;
+}
+
+#about-page ul {
+  list-style-type: none;
+  padding-left: 0px;
+  line-height: 2rem;
+}
+/* MAIN - ABOUT */
+
+/* MAIN - JURNAL */
+
+
+
+main {
+  min-height: 80vh;
+}
+/* FOOTER */
+
+footer {
+  height: 4rem;
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control .col-3 {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-control .col-9 {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-control .col-9 input {
+  width: 100%;
+  border: 1px solid #1A1919;
+  padding: 10px;
+  border-radius: 0px!important;
+}
+
+.form-control .col-9 textarea {
+  width: 100%;
+  border: 1px solid #1A1919;
+  padding: 10px;
+  border-radius: 0px!important;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead th {
+  padding: 5px;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+table tbody td,
+table tbody th {
+  padding: 10px;
+}
+
+table tbody th {
+  text-align: center;
+}
